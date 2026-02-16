@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Football Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>⚽ Football Manager Game</h1>
+
+<!-- ADD PLAYER -->
+<input type="text" id="playerName" placeholder="Enter Player Name">
+
+<select id="playerPosition">
+  <option value="GK">GK</option>
+  <option value="DEF">DEF</option>
+  <option value="MID">MID</option>
+  <option value="FWD">FWD</option>
+</select>
+
+<button onclick="addPlayer()">Add Player</button>
+
+<br><br>
+
+<select id="formationSelect">
+  <option value="433">4-3-3</option>
+  <option value="442">4-4-2</option>
+  <option value="352">3-5-2</option>
+</select>
+
+
+<!-- YOUR TEAM -->
+<div class="team-section">
+  <h2>Your Team</h2>
+  <div id="pitch">
+    <div id="ball">⚽</div>
+
+  <div class="row" id="gkRow"></div>
+  <div class="row" id="defRow"></div>
+  <div class="row" id="midRow"></div>
+  <div class="row" id="fwdRow"></div>
+</div>
+
+</div>
+
+<!-- OPPONENT -->
+<div class="team-section">
+  <h2>Opponent Team</h2>
+  <ul id="cpuList"></ul>
+</div>
+
+<!-- POWER BAR -->
+<h3>Team Power</h3>
+<div id="powerBarContainer">
+  <div id="powerBar"></div>
+</div>
+
+<button onclick="exportTeam()">📤 Share Team</button>
+<button onclick="importTeam()">📥 Play vs Friend</button>
+
+<!-- MATCH -->
+<button onclick="playMatch()">Play Match</button>
+
+<h2 id="scoreBoard">0 - 0</h2>
+<h2 id="trophy"></h2>
+
+<h3>Played: <span id="played">0</span></h3>
+<h3>Points: <span id="points">0</span></h3>
+
+<h2>League Table</h2>
+<p>Points: <span id="points">0</span></p>
+<p>Played: <span id="played">0</span></p>
+
+<h2 id="result"></h2>
+<h3 id="commentary"></h3>
+
+
+<script src="script.js"></script>
+
+<audio id="goalSound" src="https://assets.mixkit.co/sfx/preview/mixkit-football-crowd-cheer-1008.mp3"></audio>
+<audio id="kickSound" src="https://assets.mixkit.co/sfx/preview/mixkit-football-kick-2057.mp3"></audio>
+
+</body>
+</html>
+
+

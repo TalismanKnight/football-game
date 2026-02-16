@@ -1,0 +1,122 @@
+body {
+  font-family: Arial;
+  text-align: center;
+  background: linear-gradient(#0f9b0f, #004d00);
+  color: white;
+}
+
+.team-section {
+  background: rgba(0,0,0,0.4);
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: rgba(255,255,255,0.1);
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 8px;
+}
+
+button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #1db954;
+  color: white;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #17a34a;
+}
+
+li img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+/* POWER BAR */
+#powerBarContainer {
+  width: 80%;
+  background: #333;
+  height: 20px;
+  border-radius: 10px;
+  margin: 10px auto;
+}
+
+#powerBar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(to right, red, orange, yellow, lime);
+  border-radius: 10px;
+  transition: width 0.5s;
+}
+
+/* RESULT COLORS */
+.win {
+  color: lime;
+}
+
+.lose {
+  color: red;
+}
+
+/* FOOTBALL PITCH */
+#pitch{
+  background:linear-gradient(#1e7f1e,#145214);
+  padding:20px;
+  border-radius:15px;
+  width:90%;
+  margin:auto;
+}
+
+.row{
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  margin:15px 0;
+}
+
+.player-card{
+  background:rgba(0,0,0,0.5);
+  padding:6px;
+  border-radius:12px;
+  width:80px;
+  text-align:center;
+  font-size:12px;
+}
+
+.player-card img{
+  width:45px;
+  height:45px;
+  border-radius:50%;
+}
+
+.player-rating{
+  font-weight:bold;
+  color:yellow;
+}
+
+#pitch{
+  position:relative;
+}
+
+#ball{
+  position:absolute;
+  font-size:28px;
+  left:50%;
+  top:80%;
+  transition: all 1s linear;
+}
+
